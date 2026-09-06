@@ -1,204 +1,313 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Política de Privacidade — Despacha Pra Mim</title>
-<style>
-  :root {
-    --azul: #208aef;
-    --tinta: #1a1a1a;
-    --secundaria: #555;
-    --regra: #e2e2e2;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: #fff;
-    color: var(--tinta);
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 18px;
-    line-height: 1.7;
-  }
-  .folha {
-    max-width: 38rem;
-    margin: 0 auto;
-    padding: 4rem 1.5rem 6rem;
-  }
-  header { border-bottom: 3px solid var(--azul); padding-bottom: 1.5rem; margin-bottom: 2.5rem; }
-  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .5rem; font-weight: normal; }
-  .produto { color: var(--azul); font-weight: bold; }
-  .vigencia { color: var(--secundaria); font-size: .9rem; margin: 0; }
-  h2 {
-    font-size: 1.15rem;
-    margin: 2.75rem 0 .75rem;
-    font-weight: bold;
-    line-height: 1.35;
-  }
-  p, li { margin: 0 0 1rem; }
-  ul { padding-left: 1.25rem; }
-  a { color: var(--azul); }
-  .destaque {
-    border-left: 3px solid var(--azul);
-    padding: .25rem 0 .25rem 1.25rem;
-    margin: 1.75rem 0;
-    color: var(--secundaria);
-  }
-  footer {
-    margin-top: 4rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--regra);
-    color: var(--secundaria);
-    font-size: .9rem;
-  }
-  @media (max-width: 480px) {
-    body { font-size: 17px; }
-    .folha { padding: 2.5rem 1.25rem 4rem; }
-    h1 { font-size: 1.5rem; }
-  }
-</style>
-</head>
-<body>
-<main class="folha">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Política de Privacidade — Despacha Pra Mim</title>
+    <link rel="icon" href="icone.svg" type="image/svg+xml" />
+    <style>
+      :root {
+        --marinho: #172442;
+        --laranja: #f6700f;
+        --papel: #fdfdfc;
+        --secundaria: #5a6377;
+        --regra: #dfe2e8;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--papel);
+        color: var(--marinho);
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 18px;
+        line-height: 1.7;
+      }
+      .folha {
+        max-width: 38rem;
+        margin: 0 auto;
+        padding: 3.5rem 1.5rem 5rem;
+      }
+      header {
+        border-bottom: 3px solid var(--laranja);
+        padding-bottom: 1.5rem;
+        margin-bottom: 2.5rem;
+      }
+      h1 {
+        font-size: 1.85rem;
+        line-height: 1.25;
+        margin: 0 0 0.5rem;
+        font-weight: normal;
+      }
+      .vigencia {
+        color: var(--secundaria);
+        font-size: 0.9rem;
+        margin: 0;
+        font-family: system-ui, sans-serif;
+      }
+      h2 {
+        font-size: 1.15rem;
+        margin: 2.75rem 0 0.75rem;
+        font-weight: bold;
+        line-height: 1.35;
+      }
+      p,
+      li {
+        margin: 0 0 1rem;
+      }
+      ul {
+        padding-left: 1.25rem;
+      }
+      a {
+        color: var(--marinho);
+        text-decoration-color: var(--laranja);
+        text-underline-offset: 3px;
+      }
+      a:hover {
+        color: var(--laranja);
+      }
+      a:focus-visible {
+        outline: 2px solid var(--laranja);
+        outline-offset: 3px;
+      }
+      .destaque {
+        border-left: 3px solid var(--laranja);
+        padding: 0.25rem 0 0.25rem 1.25rem;
+        margin: 1.75rem 0;
+        color: var(--secundaria);
+      }
+      .identificacao {
+        font-family: system-ui, sans-serif;
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+      footer {
+        margin-top: 3.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--regra);
+        color: var(--secundaria);
+        font-size: 0.9rem;
+        font-family: system-ui, sans-serif;
+      }
+      @media (max-width: 480px) {
+        body {
+          font-size: 17px;
+        }
+        .folha {
+          padding: 2.5rem 1.25rem 4rem;
+        }
+        h1 {
+          font-size: 1.45rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="folha">
+      <header>
+        <h1>Política de Privacidade do Despacha Pra Mim</h1>
+        <p class="vigencia">Vigente desde 6 de setembro de 2026</p>
+      </header>
 
-<header>
-  <h1>Política de Privacidade do <span class="produto">Despacha Pra Mim</span></h1>
-  <p class="vigencia">Vigente desde 6 de setembro de 2026</p>
-</header>
+      <p>
+        O Despacha Pra Mim é um sistema de gestão de entregas usado por restaurantes que têm frota própria de
+        entregadores. Ele tem duas partes: um painel usado pela loja e um aplicativo Android usado pelos entregadores.
+      </p>
 
-<p>
-  O Despacha Pra Mim é um sistema de gestão de entregas usado por restaurantes
-  que têm frota própria de entregadores. Ele tem duas partes: um painel usado
-  pela loja e um aplicativo Android usado pelos entregadores.
-</p>
+      <p>
+        Esta política explica quais dados o sistema trata, com que fundamento legal, por quanto tempo, e o que você pode
+        pedir a respeito deles.
+      </p>
 
-<p>
-  Esta política explica quais dados o sistema trata, por quanto tempo, e o que
-  você pode pedir a respeito deles.
-</p>
+      <div class="destaque">
+        O sistema foi desenhado para guardar o mínimo possível. Nome, telefone e localizador de chamada do cliente são
+        excluídos 24 horas depois da criação do pedido.
+      </div>
 
-<div class="destaque">
-  O sistema foi desenhado para guardar o mínimo possível. Nome, telefone e
-  localizador de chamada do cliente são apagados 24 horas depois da criação do
-  pedido, automaticamente.
-</div>
+      <h2>Quem responde pelos dados</h2>
 
-<h2>Quem trata os dados</h2>
+      <p class="identificacao">
+        <strong>Operador:</strong> Juan Victor Duarte Xavier, CNPJ 63.832.081/0001-06, Taubaté&nbsp;–&nbsp;SP.<br />
+        <strong>Encarregado pelo tratamento de dados pessoais:</strong>
+        Juan Victor Duarte Xavier —
+        <a href="mailto:despachapramim01@gmail.com">despachapramim01@gmail.com</a>
+      </p>
 
-<p>
-  O restaurante que contrata o sistema é quem decide coletar os dados e para que
-  usá-los. Nós fornecemos o software e processamos os dados em nome dele,
-  seguindo as regras descritas aqui.
-</p>
+      <p>
+        O restaurante que contrata o sistema é o <strong>controlador</strong>: é ele quem decide coletar os dados e para
+        que usá-los. Nós fornecemos o software e atuamos como <strong>operador</strong>, processando os dados em nome
+        dele e seguindo as regras descritas aqui.
+      </p>
 
-<p>
-  Quando o pedido vem de uma plataforma de delivery, é a plataforma que coleta os
-  dados do cliente e os repassa ao restaurante. Nós apenas recebemos o que é
-  necessário para a entrega acontecer.
-</p>
+      <p>
+        Quando o pedido vem de uma plataforma de delivery, a plataforma é quem coleta os dados do cliente e os repassa
+        ao restaurante. Nós apenas recebemos o que é necessário para a entrega acontecer.
+      </p>
 
-<h2>Dados do cliente que faz o pedido</h2>
+      <h2>Que dados são tratados, para quê e com que fundamento</h2>
 
-<p>Para uma entrega acontecer, o sistema recebe e armazena temporariamente:</p>
+      <p>Do cliente que faz o pedido:</p>
 
-<ul>
-  <li>Nome</li>
-  <li>Telefone ou localizador de chamada</li>
-  <li>Endereço de entrega, incluindo complemento e ponto de referência</li>
-  <li>Valor a cobrar e forma de pagamento</li>
-</ul>
+      <ul>
+        <li><strong>Nome</strong> — para o entregador saber a quem entregar</li>
+        <li>
+          <strong>Telefone ou localizador de chamada</strong> — para o entregador avisar que chegou ou resolver um
+          problema no endereço
+        </li>
+        <li>
+          <strong>Endereço, complemento e ponto de referência</strong> — para calcular a rota e localizar a entrega
+        </li>
+        <li><strong>Valor a cobrar, forma de pagamento e troco</strong> — para o entregador receber corretamente</li>
+      </ul>
 
-<p>
-  <strong>Esses dados são apagados 24 horas após a criação do pedido.</strong> A
-  exclusão é automática, roda todos os dias, e não depende de solicitação. O
-  registro do pedido em si permanece — valor, taxa, horário — porque o
-  restaurante precisa dele para fechar o caixa e acertar com o entregador. Mas
-  ele deixa de estar associado a uma pessoa identificável.
-</p>
+      <p>Do entregador:</p>
 
-<h2>Dados do entregador</h2>
+      <ul>
+        <li>
+          <strong>E-mail e senha</strong> — para acessar o aplicativo. A senha é armazenada com algoritmo de hash e não
+          pode ser lida por nós nem pelo restaurante
+        </li>
+        <li>
+          <strong>Entregas realizadas, taxas e turnos trabalhados</strong> — para que ele confira o próprio acerto com o
+          restaurante
+        </li>
+      </ul>
 
-<p>
-  Cada entregador tem uma conta criada pelo restaurante, com e-mail e senha. A
-  senha é armazenada de forma protegida e não pode ser lida por nós nem pelo
-  restaurante.
-</p>
+      <p>
+        <strong>Base legal:</strong> o tratamento se fundamenta na execução de contrato ou de procedimentos preliminares
+        (art. 7º, V, da LGPD) — a entrega não acontece sem esses dados — e no legítimo interesse do restaurante em
+        organizar a própria operação (art. 7º, IX). Nenhum dado é tratado com base em consentimento para finalidade
+        publicitária, porque não há publicidade no sistema.
+      </p>
 
-<p>
-  O aplicativo mostra ao entregador as entregas atribuídas a ele, o valor de cada
-  taxa e o histórico dos turnos em que trabalhou. Esse histórico existe para que
-  ele possa conferir o próprio acerto — e, como os dados do cliente já foram
-  apagados, ele mostra endereço e valores, nunca o nome de quem recebeu.
-</p>
+      <h2>Por quanto tempo os dados ficam</h2>
 
-<h2>O que o sistema não faz</h2>
+      <p>
+        <strong>Dados pessoais do cliente: 24 horas.</strong> Nome, telefone e localizador são excluídos automaticamente
+        24 horas após a criação do pedido. A exclusão roda todos os dias e não depende de pedido de ninguém — mas isso
+        não afasta o seu direito de solicitar a eliminação antes desse prazo, a qualquer momento.
+      </p>
 
-<ul>
-  <li>
-    <strong>Não rastreia a localização do entregador.</strong> O aplicativo não
-    coleta nem envia a posição do aparelho para nenhum servidor.
-  </li>
-  <li>
-    <strong>Não usa ferramentas de análise de comportamento</strong>, publicidade
-    ou relatório automático de falhas. Nenhum dado é enviado a terceiros com
-    essas finalidades.
-  </li>
-  <li>
-    <strong>Não vende nem compartilha dados</strong> com terceiros para fins
-    comerciais.
-  </li>
-  <li>
-    <strong>Não monta cadastro de clientes.</strong> Os dados existem para a
-    entrega acontecer e são descartados depois.
-  </li>
-</ul>
+      <p>
+        <strong>Registro da entrega: enquanto o restaurante precisar dele.</strong>
+        Valor, taxa e horário permanecem, porque o restaurante usa esses números para fechar o caixa e acertar com o
+        entregador. Depois da exclusão dos dados pessoais, esse registro não contém mais nome, telefone nem localizador.
+        Quem define por quanto tempo guardá-lo é o restaurante, que pode ter obrigações contábeis e fiscais próprias.
+      </p>
 
-<h2>Onde os dados ficam</h2>
+      <p>
+        <strong>Conta do entregador: enquanto ele trabalhar no restaurante.</strong>
+        Contas são desativadas, não apagadas, para que o histórico de turnos anteriores continue disponível para
+        conferência de pagamentos.
+      </p>
 
-<p>
-  Os dados são armazenados em servidor localizado no Brasil, com acesso
-  restrito. A comunicação entre o aplicativo, o painel e o servidor é
-  criptografada.
-</p>
+      <h2>Com quem os dados são compartilhados</h2>
 
-<h2>Seus direitos</h2>
+      <p>Os dados podem ser acessados ou transitar por:</p>
 
-<p>
-  A Lei Geral de Proteção de Dados (Lei 13.709/2018) garante a você o direito de
-  confirmar se tratamos seus dados, acessá-los, corrigi-los, pedir a exclusão e
-  saber com quem foram compartilhados.
-</p>
+      <ul>
+        <li><strong>O restaurante contratante</strong>, que é o controlador</li>
+        <li><strong>O entregador designado</strong>, que vê apenas as entregas atribuídas a ele</li>
+        <li>
+          <strong>A plataforma de delivery</strong>, quando o pedido tem origem nela — nesse caso a plataforma é a
+          origem do dado, não o destino
+        </li>
+        <li>
+          <strong>O provedor de infraestrutura</strong> que hospeda o servidor, contratado sob obrigação de
+          confidencialidade
+        </li>
+        <li><strong>Autoridades públicas</strong>, se houver requisição legal</li>
+      </ul>
 
-<p>
-  Para pedidos relacionados a uma entrega, procure primeiro o restaurante — é
-  ele quem tem a relação com você e quem decide sobre esses dados. Se preferir
-  falar conosco diretamente, use o contato abaixo.
-</p>
+      <p>
+        Não vendemos dados, não os cedemos para publicidade e não os usamos para qualquer finalidade além de fazer a
+        entrega acontecer.
+      </p>
 
-<p>
-  Na prática, a maior parte dos pedidos de exclusão já estará atendida antes de
-  chegar: os dados pessoais de um pedido não sobrevivem mais de 24 horas no
-  sistema.
-</p>
+      <h2>O que o sistema não faz</h2>
 
-<h2>Mudanças nesta política</h2>
+      <ul>
+        <li>
+          <strong>Não rastreia a localização do entregador.</strong> O aplicativo não coleta nem envia a posição do
+          aparelho para nenhum servidor.
+        </li>
+        <li>
+          <strong
+            >Não usa cookies, ferramentas de análise de comportamento, publicidade ou relatório automático de
+            falhas.</strong
+          >
+          Nenhum dado é enviado a terceiros com essas finalidades.
+        </li>
+        <li>
+          <strong>Não guarda dados além do necessário para a entrega.</strong> Não há base de clientes, histórico de
+          compras nem perfil de consumo.
+        </li>
+        <li><strong>Não toma decisões automatizadas</strong> que afetem os interesses do cliente ou do entregador.</li>
+      </ul>
 
-<p>
-  Se o sistema passar a tratar dados de forma diferente, esta página é atualizada
-  antes da mudança entrar em vigor, e a data de vigência no topo muda junto.
-</p>
+      <h2>Onde os dados ficam</h2>
 
-<h2>Contato</h2>
+      <p>
+        Os dados são armazenados em servidor localizado no Brasil, com acesso restrito, e a comunicação entre o
+        aplicativo, o painel e o servidor é criptografada.
+      </p>
 
-<p>
-  Dúvidas ou solicitações sobre dados pessoais:
-  <a href="mailto:despachapramim01@gmail.com">despachapramim01@gmail.com</a>
-</p>
+      <p>
+        <strong>Não há transferência internacional de dados pessoais.</strong> Se isso mudar, esta política será
+        atualizada antes.
+      </p>
 
-<footer>
-  Despacha Pra Mim — Taubaté, SP
-</footer>
+      <h2>Seus direitos</h2>
 
-</main>
-</body>
+      <p>
+        O artigo 18 da Lei Geral de Proteção de Dados (Lei 13.709/2018) garante a você o direito de solicitar, a
+        qualquer momento:
+      </p>
+
+      <ul>
+        <li>Confirmação de que tratamos seus dados</li>
+        <li>Acesso aos dados</li>
+        <li>Correção de dados incompletos, inexatos ou desatualizados</li>
+        <li>
+          Anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a
+          lei
+        </li>
+        <li>Portabilidade a outro fornecedor, conforme regulamentação da ANPD</li>
+        <li>Eliminação dos dados tratados com base em consentimento</li>
+        <li>Informação sobre com quem compartilhamos seus dados</li>
+        <li>Informação sobre a possibilidade de não fornecer consentimento e sobre as consequências disso</li>
+        <li>Revogação do consentimento</li>
+        <li>Oposição a tratamento feito com base em legítimo interesse</li>
+      </ul>
+
+      <p>
+        Para exercer qualquer um deles, escreva ao encarregado:
+        <a href="mailto:juanxavier735@gmail.com">juanxavier735@gmail.com</a>. Respondemos em até 15 dias.
+      </p>
+
+      <p>
+        Como somos operador, pedidos sobre uma entrega específica podem exigir a participação do restaurante, que é o
+        controlador — nesse caso encaminhamos a solicitação e informamos você.
+      </p>
+
+      <p>
+        Se não ficar satisfeito com a resposta, você pode apresentar reclamação à Autoridade Nacional de Proteção de
+        Dados (ANPD) em
+        <a href="https://www.gov.br/anpd">gov.br/anpd</a>.
+      </p>
+
+      <h2>Mudanças nesta política</h2>
+
+      <p>
+        Se o sistema passar a tratar dados de forma diferente, esta página é atualizada antes da mudança entrar em
+        vigor, e a data de vigência no topo muda junto.
+      </p>
+
+      <footer><a href="index.html">Despacha Pra Mim</a> — Taubaté, SP</footer>
+    </main>
+  </body>
 </html>
