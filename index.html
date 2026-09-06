@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Despacha Pra Mim — gestão de entregas para restaurantes</title>
+<meta name="description" content="Sistema de gestão de entregas para restaurantes com frota própria de motoboys, em Taubaté-SP.">
+<link rel="icon" href="icone.svg" type="image/svg+xml">
+<style>
+  :root {
+    --marinho: #172442;
+    --laranja: #f6700f;
+    --papel: #fdfdfc;
+    --secundaria: #5a6377;
+    --regra: #dfe2e8;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--papel);
+    color: var(--marinho);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .pagina {
+    max-width: 34rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 4rem;
+  }
+  .marca { max-width: 17rem; height: auto; display: block; }
+  .resumo {
+    font-size: 1.3rem;
+    line-height: 1.45;
+    margin: 2.5rem 0 0;
+  }
+  .lugar {
+    color: var(--secundaria);
+    margin: .75rem 0 0;
+  }
+
+  /* Bloco reservado para o download do APK no lançamento.
+     Está oculto até existir arquivo para baixar — a estrutura
+     fica pronta para não redesenhar a página depois. */
+  .instalar { display: none; }
+  .instalar[data-ativo] { display: block; margin: 3rem 0 0; }
+  .botao {
+    display: inline-block;
+    background: var(--laranja);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: .9rem 2rem;
+    border-radius: 6px;
+  }
+
+  .divisor { border: 0; border-top: 1px solid var(--regra); margin: 3rem 0; }
+
+  h2 {
+    font-size: .95rem;
+    font-weight: 600;
+    color: var(--secundaria);
+    margin: 0 0 .75rem;
+  }
+  .contatos { list-style: none; padding: 0; margin: 0; }
+  .contatos li { margin-bottom: .5rem; }
+  a { color: var(--marinho); text-decoration-color: var(--laranja); text-underline-offset: 3px; }
+  a:hover { color: var(--laranja); }
+  a:focus-visible { outline: 2px solid var(--laranja); outline-offset: 3px; }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--regra);
+    color: var(--secundaria);
+    font-size: .875rem;
+  }
+
+  @media (max-width: 420px) {
+    .pagina { padding: 2.5rem 1.25rem 3rem; }
+    .marca { max-width: 13.5rem; }
+    .resumo { font-size: 1.15rem; }
+  }
+</style>
+</head>
+<body>
+<main class="pagina">
+
+  <img src="logo.svg" alt="Despacha Pra Mim" class="marca" width="272" height="91">
+
+  <p class="resumo">
+    Sistema de gestão de entregas para restaurantes que têm a própria
+    frota de motoboys.
+  </p>
+
+  <p class="lugar">Taubaté, São Paulo.</p>
+
+  <!-- Quando o APK estiver hospedado, trocar o href e adicionar
+       o atributo data-ativo na section para exibir o bloco. -->
+  <section class="instalar">
+    <a class="botao" href="#">Baixar o aplicativo</a>
+  </section>
+
+  <hr class="divisor">
+
+  <h2>Contato</h2>
+  <ul class="contatos">
+    <li><a href="mailto:despachapramim01@gmail.com">despachapramim01@gmail.com</a></li>
+    <li><a href="https://wa.me/5512974050872">WhatsApp (12) 97405-0872</a></li>
+  </ul>
+
+  <footer>
+    <a href="politica-de-privacidade.html">Política de privacidade</a>
+  </footer>
+
+</main>
+</body>
+</html>
