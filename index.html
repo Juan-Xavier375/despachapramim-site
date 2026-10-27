@@ -7,19 +7,25 @@
 <meta name="description" content="Sistema de gestão de entregas para restaurantes com frota própria de motoboys, em Taubaté-SP.">
 <link rel="icon" href="icone.svg" type="image/svg+xml">
 <style>
+  /* Tema escuro fixo, com os papéis de cor do painel (apps/desktop/src/App.css) */
   :root {
-    --marinho: #172442;
-    --laranja: #f6700f;
-    --papel: #fdfdfc;
-    --secundaria: #5a6377;
-    --regra: #dfe2e8;
+    color-scheme: dark;
+    --fundo: #030712;            /* canvas */
+    --texto: #f9fafb;            /* fg */
+    --texto-2: #d1d5dc;          /* fg-2 */
+    --secundaria: #99a1af;       /* fg-3 */
+    --regra: #364153;            /* line */
+    --laranja: #f6700f;          /* primary */
+    --laranja-hover: #ff8a3d;    /* primary-hover */
+    --sobre-laranja: #030712;    /* on-primary */
+    --laranja-texto: #ff8a3d;    /* primary-text */
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0;
-    background: var(--papel);
-    color: var(--marinho);
+    background: var(--fundo);
+    color: var(--texto);
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     font-size: 17px;
     line-height: 1.65;
@@ -36,7 +42,7 @@
     margin: 2.5rem 0 0;
   }
   .lugar {
-    color: var(--secundaria);
+    color: var(--texto-2);
     margin: .75rem 0 0;
   }
 
@@ -48,12 +54,25 @@
   .botao {
     display: inline-block;
     background: var(--laranja);
-    color: #fff;
+    color: var(--sobre-laranja);
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
     padding: .9rem 2rem;
     border-radius: 6px;
+  }
+
+  .teste { margin: .75rem 0 0; font-weight: 600; }
+  .acessar { margin: 2.5rem 0 0; }
+  .acessos { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+  .acesso { display: block; text-decoration: none; color: inherit; }
+  .acesso .botao { display: flex; align-items: center; justify-content: center; min-height: 4.5rem; text-align: center; padding: 1rem; }
+  .acesso:hover .botao { background: var(--laranja-hover); }
+  .acesso:focus-visible { outline: 2px solid var(--laranja-texto); outline-offset: 3px; border-radius: 6px; }
+  .acesso small { display: block; margin-top: .5rem; color: var(--secundaria); font-size: .9rem; line-height: 1.4; text-align: center; }
+  @media (min-width: 640px) {
+    .pagina:has(.acessos) { max-width: 52rem; }
+    .acessos { grid-template-columns: repeat(3, 1fr); }
   }
 
   .divisor { border: 0; border-top: 1px solid var(--regra); margin: 3rem 0; }
@@ -66,9 +85,9 @@
   }
   .contatos { list-style: none; padding: 0; margin: 0; }
   .contatos li { margin-bottom: .5rem; }
-  a { color: var(--marinho); text-decoration-color: var(--laranja); text-underline-offset: 3px; }
-  a:hover { color: var(--laranja); }
-  a:focus-visible { outline: 2px solid var(--laranja); outline-offset: 3px; }
+  a { color: var(--laranja-texto); text-decoration-color: var(--laranja-texto); text-underline-offset: 3px; }
+  a:hover { color: var(--texto); }
+  a:focus-visible { outline: 2px solid var(--laranja-texto); outline-offset: 3px; }
 
   footer {
     margin-top: 3.5rem;
@@ -88,7 +107,7 @@
 <body>
 <main class="pagina">
 
-  <img src="logo.svg" alt="Despacha Pra Mim" class="marca" width="272" height="91">
+  <img src="logo-escuro.png" srcset="logo-escuro.png 1x, logo-escuro@2x.png 2x, logo-escuro@3x.png 3x" alt="Despacha Pra Mim" class="marca" width="280" height="94">
 
   <p class="resumo">
     Sistema de gestão de entregas para restaurantes que têm a própria
@@ -96,6 +115,26 @@
   </p>
 
   <p class="lugar">Taubaté, São Paulo.</p>
+
+  <p class="teste">Em teste com o primeiro restaurante, em Taubaté.</p>
+
+  <section class="acessar">
+    <h2>Acessar</h2>
+    <div class="acessos">
+      <a class="acesso" href="https://painel.despachapramim.com.br">
+        <span class="botao">Painel da loja</span>
+        <small>Para o dono e a balconista, no navegador.</small>
+      </a>
+      <a class="acesso" href="/app">
+        <span class="botao">App do motoboy</span>
+        <small>Android e iPhone.</small>
+      </a>
+      <a class="acesso" href="/baixar-desktop">
+        <span class="botao">Programa para Windows</span>
+        <small>Para o computador da loja.</small>
+      </a>
+    </div>
+  </section>
 
   <!-- Quando o APK estiver hospedado, trocar o href e adicionar
        o atributo data-ativo na section para exibir o bloco. -->

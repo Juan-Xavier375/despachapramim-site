@@ -6,12 +6,16 @@
     <title>Política de Privacidade — Despacha Pra Mim</title>
     <link rel="icon" href="icone.svg" type="image/svg+xml" />
     <style>
+      /* Tema escuro fixo, com os papéis de cor do painel (apps/desktop/src/App.css) */
       :root {
-        --marinho: #172442;
-        --laranja: #f6700f;
-        --papel: #fdfdfc;
-        --secundaria: #5a6377;
-        --regra: #dfe2e8;
+        color-scheme: dark;
+        --fundo: #030712; /* canvas */
+        --superficie: #101828; /* surface */
+        --texto: #f9fafb; /* fg */
+        --secundaria: #99a1af; /* fg-3 */
+        --regra: #364153; /* line */
+        --laranja: #f6700f; /* primary */
+        --laranja-texto: #ff8a3d; /* primary-text */
       }
       * {
         box-sizing: border-box;
@@ -21,8 +25,8 @@
       }
       body {
         margin: 0;
-        background: var(--papel);
-        color: var(--marinho);
+        background: var(--fundo);
+        color: var(--texto);
         font-family: Georgia, 'Times New Roman', serif;
         font-size: 18px;
         line-height: 1.7;
@@ -75,15 +79,15 @@
         margin-top: 0.75rem;
       }
       a {
-        color: var(--marinho);
-        text-decoration-color: var(--laranja);
+        color: var(--laranja-texto);
+        text-decoration-color: var(--laranja-texto);
         text-underline-offset: 3px;
       }
       a:hover {
-        color: var(--laranja);
+        color: var(--texto);
       }
       a:focus-visible {
-        outline: 2px solid var(--laranja);
+        outline: 2px solid var(--laranja-texto);
         outline-offset: 3px;
       }
       .tabela {
@@ -106,7 +110,12 @@
       th {
         color: var(--secundaria);
         font-weight: 600;
+        background: var(--superficie);
         border-bottom: 2px solid var(--laranja);
+      }
+      th:first-child,
+      td:first-child {
+        padding-left: 0.75rem;
       }
       footer {
         margin-top: 3.5rem;
