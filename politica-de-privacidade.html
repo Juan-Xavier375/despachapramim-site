@@ -31,6 +31,7 @@
         max-width: 38rem;
         margin: 0 auto;
         padding: 3.5rem 1.5rem 5rem;
+        overflow-wrap: break-word;
       }
       header {
         border-bottom: 3px solid var(--laranja);
@@ -55,12 +56,23 @@
         font-weight: bold;
         line-height: 1.35;
       }
+      h3 {
+        font-size: 1rem;
+        margin: 1.75rem 0 0.5rem;
+        font-weight: bold;
+        line-height: 1.35;
+        color: var(--secundaria);
+        font-family: system-ui, sans-serif;
+      }
       p,
       li {
         margin: 0 0 1rem;
       }
       ul {
         padding-left: 1.25rem;
+      }
+      li > ul {
+        margin-top: 0.75rem;
       }
       a {
         color: var(--marinho);
@@ -74,16 +86,27 @@
         outline: 2px solid var(--laranja);
         outline-offset: 3px;
       }
-      .destaque {
-        border-left: 3px solid var(--laranja);
-        padding: 0.25rem 0 0.25rem 1.25rem;
-        margin: 1.75rem 0;
-        color: var(--secundaria);
+      .tabela {
+        margin: 1.5rem 0;
       }
-      .identificacao {
+      table {
+        width: 100%;
+        border-collapse: collapse;
         font-family: system-ui, sans-serif;
-        font-size: 0.95rem;
-        line-height: 1.6;
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 0.6rem 0.75rem 0.6rem 0;
+        border-bottom: 1px solid var(--regra);
+      }
+      th {
+        color: var(--secundaria);
+        font-weight: 600;
+        border-bottom: 2px solid var(--laranja);
       }
       footer {
         margin-top: 3.5rem;
@@ -103,6 +126,13 @@
         h1 {
           font-size: 1.45rem;
         }
+        table {
+          font-size: 0.85rem;
+        }
+        th,
+        td {
+          padding-right: 0.5rem;
+        }
       }
     </style>
   </head>
@@ -110,202 +140,174 @@
     <main class="folha">
       <header>
         <h1>Política de Privacidade do Despacha Pra Mim</h1>
-        <p class="vigencia">Vigente desde 6 de setembro de 2026</p>
+        <p class="vigencia"><strong>Vigente desde 27 de outubro de 2026.</strong> Esta versão substitui a de 6 de setembro de 2026. O que mudou está no fim da página.</p>
       </header>
 
-      <p>
-        O Despacha Pra Mim é um sistema de gestão de entregas usado por restaurantes que têm frota própria de
-        entregadores. Ele tem duas partes: um painel usado pela loja e um aplicativo Android usado pelos entregadores.
-      </p>
+<p>O Despacha Pra Mim é um sistema de gestão de entregas para restaurantes que têm entregadores próprios. Ele tem quatro partes:</p>
 
-      <p>
-        Esta política explica quais dados o sistema trata, com que fundamento legal, por quanto tempo, e o que você pode
-        pedir a respeito deles.
-      </p>
+<ul><li>o <strong>painel da loja</strong>, usado pelo proprietário e pela balconista: um aplicativo para Windows e a mesma tela no navegador, em painel.despachapramim.com.br;</li><li>o <strong>aplicativo do entregador</strong>: para Android, e a mesma tela no navegador, em motoboy.despachapramim.com.br, para quem usa iPhone;</li><li>o <strong>servidor</strong>, em api.despachapramim.com.br, que guarda e processa os dados;</li><li>este <strong>site</strong>, em despachapramim.com.br.</li></ul>
 
-      <div class="destaque">
-        O sistema foi desenhado para guardar o mínimo possível. Nome, telefone e localizador de chamada do cliente são
-        excluídos 24 horas depois da criação do pedido.
-      </div>
+<p>Esta política explica quais dados o sistema trata, para quê, onde ficam, por quanto tempo, quem os recebe e o que você pode pedir a respeito deles.</p>
 
-      <h2>Quem responde pelos dados</h2>
+<p>O sistema foi feito para guardar o mínimo. Nome, telefone e endereço do cliente saem do sistema cerca de um dia depois do pedido: em até 25 horas depois de o pedido entrar no despacho da loja. As cópias de segurança não são apagadas no mesmo instante e podem guardá-los por mais tempo, até 14 dias, como explicado em "Por quanto tempo os dados ficam".</p>
 
-      <p class="identificacao">
-        <strong>Operador:</strong> Juan Victor Duarte Xavier, CNPJ 63.832.081/0001-06, Taubaté&nbsp;–&nbsp;SP.<br />
-        <strong>Encarregado pelo tratamento de dados pessoais:</strong>
-        Juan Victor Duarte Xavier —
-        <a href="mailto:despachapramim01@gmail.com">despachapramim01@gmail.com</a>
-      </p>
+<h2>Quem responde pelos dados</h2>
 
-      <p>
-        O restaurante que contrata o sistema é o <strong>controlador</strong>: é ele quem decide coletar os dados e para
-        que usá-los. Nós fornecemos o software e atuamos como <strong>operador</strong>, processando os dados em nome
-        dele e seguindo as regras descritas aqui.
-      </p>
+<p><strong>Responsável pelo Despacha Pra Mim:</strong> Juan Victor Duarte Xavier, CNPJ 63.832.081/0001-06, Taubaté – SP.</p>
 
-      <p>
-        Quando o pedido vem de uma plataforma de delivery, a plataforma é quem coleta os dados do cliente e os repassa
-        ao restaurante. Nós apenas recebemos o que é necessário para a entrega acontecer.
-      </p>
+<p><strong>Encarregado de dados do Despacha Pra Mim:</strong> Juan Victor Duarte Xavier, pelo e-mail <strong><a href="mailto:despachapramim01@gmail.com">despachapramim01@gmail.com</a></strong>. Ele responde pelo Despacha Pra Mim, não pelos restaurantes que usam o sistema.</p>
 
-      <h2>Que dados são tratados, para quê e com que fundamento</h2>
+<p><strong>Dados dos pedidos, dos clientes e dos entregadores.</strong> Quem decide para que esses dados são usados é o <strong>restaurante</strong>: na linguagem da lei, ele é o <strong>controlador</strong>. O Despacha Pra Mim é o <strong>operador</strong>: trata esses dados para fazer o sistema funcionar, conforme as instruções que o restaurante aceita antes de começar a usar o sistema. Isso não tira nenhum direito da pessoa a quem os dados se referem.</p>
 
-      <p>Do cliente que faz o pedido:</p>
+<p><strong>Como saber qual é o restaurante responsável e falar com ele:</strong></p>
 
-      <ul>
-        <li><strong>Nome</strong> — para o entregador saber a quem entregar</li>
-        <li>
-          <strong>Telefone ou localizador de chamada</strong> — para o entregador avisar que chegou ou resolver um
-          problema no endereço
-        </li>
-        <li>
-          <strong>Endereço, complemento e ponto de referência</strong> — para calcular a rota e localizar a entrega
-        </li>
-        <li><strong>Valor a cobrar, forma de pagamento e troco</strong> — para o entregador receber corretamente</li>
-      </ul>
+<ul><li><strong>Se você é cliente</strong>, é o restaurante onde você fez o pedido.</li><li><strong>Se você é entregador</strong>, é o restaurante para quem você trabalha. O nome dele aparece na aba <strong>Conta</strong> do aplicativo, quando você está escalado num turno.</li><li><strong>Para qualquer pedido sobre os seus dados</strong>, todo restaurante que usa o sistema aceita o e-mail <strong><a href="mailto:despachapramim01@gmail.com">despachapramim01@gmail.com</a></strong> como canal oficial. Escreva para ele, dizendo o restaurante e, se souber, o dia do pedido ou da entrega. Nós encaminhamos ao restaurante responsável, que se comprometeu a responder, e informamos você. Se preferir, também pode falar com o restaurante diretamente.</li></ul>
 
-      <p>Do entregador:</p>
+<p><strong>Contas da equipe da loja e segurança do sistema.</strong> As contas do proprietário e da balconista, os registros técnicos, as cópias de segurança e o controle de tentativas de acesso são de nossa responsabilidade direta. Nesses casos, quem decide como e por quanto tempo tratar os dados somos nós, e respondemos como controlador.</p>
 
-      <ul>
-        <li>
-          <strong>E-mail e senha</strong> — para acessar o aplicativo. A senha é armazenada com algoritmo de hash e não
-          pode ser lida por nós nem pelo restaurante
-        </li>
-        <li>
-          <strong>Entregas realizadas, taxas e turnos trabalhados</strong> — para que ele confira o próprio acerto com o
-          restaurante
-        </li>
-      </ul>
+<p>Quando o pedido vem de uma plataforma de delivery, como o iFood, é a plataforma que coleta os dados do cliente e os repassa ao restaurante.</p>
 
-      <p>
-        <strong>Base legal:</strong> o tratamento se fundamenta na execução de contrato ou de procedimentos preliminares
-        (art. 7º, V, da LGPD) — a entrega não acontece sem esses dados — e no legítimo interesse do restaurante em
-        organizar a própria operação (art. 7º, IX). Nenhum dado é tratado com base em consentimento para finalidade
-        publicitária, porque não há publicidade no sistema.
-      </p>
+<h2>Que dados são tratados e para quê</h2>
 
-      <h2>Por quanto tempo os dados ficam</h2>
+<h3>Do cliente que faz o pedido</h3>
 
-      <p>
-        <strong>Dados pessoais do cliente: 24 horas.</strong> Nome, telefone e localizador são excluídos automaticamente
-        24 horas após a criação do pedido. A exclusão roda todos os dias e não depende de pedido de ninguém — mas isso
-        não afasta o seu direito de solicitar a eliminação antes desse prazo, a qualquer momento.
-      </p>
+<ul><li><strong>Nome</strong>, para o entregador saber a quem entregar.</li><li><strong>Telefone</strong>, para o entregador avisar que chegou ou resolver um problema no endereço. No pedido lançado pela loja, é o número que o cliente informou. No pedido do iFood, é o número da central do iFood com um código (localizador) que liga o entregador ao cliente sem mostrar o número real.</li><li><strong>Endereço, complemento, ponto de referência, CEP, bairro e a coordenada no mapa</strong>, para montar a rota, calcular a taxa pela distância e mostrar o local no mapa.</li><li><strong>Valor a cobrar, forma de pagamento e troco</strong>, para o entregador receber corretamente.</li><li><strong>Itens, observações e documento (CPF)</strong> informados no iFood: mostrados à loja no detalhe do pedido. São consultados no iFood na hora em que a tela abre e <strong>não são gravados</strong>. Deixam de ser mostrados 24 horas depois de o pedido entrar no despacho da loja. O entregador não os vê.</li><li><strong>Reclamação aberta pelo cliente no iFood</strong> (o texto, os itens e o endereço das fotos, que ficam no iFood), para a loja responder dentro do prazo.</li><li><strong>Foto de comprovação da entrega</strong>, se o entregador tirar. É opcional e serve só para comprovar a entrega. O entregador é orientado a fotografar apenas a porta ou a sacola, sem pessoas, documentos ou o interior da casa. O aplicativo reduz a foto e tira dela a localização embutida antes de enviar.</li><li><strong>Problema na entrega</strong>, se o entregador avisar que não conseguiu entregar: o <strong>motivo</strong>, escolhido numa lista (cliente não encontrado, problema com o pagamento, cliente não sabe o código, outro); uma <strong>descrição curta, de até 140 caracteres</strong>, só no motivo "outro"; e a <strong>foto</strong>, se ele tirar. A foto é opcional e serve para mostrar à loja o que aconteceu; o entregador é orientado a evitar fotografar o rosto de pessoas. O aplicativo reduz a foto e tira dela a localização embutida antes de enviar. A loja vê o aviso para ajudar o entregador. A taxa da entrega é paga ao entregador por padrão, e a loja pode escolher não pagar.</li></ul>
 
-      <p>
-        <strong>Registro da entrega: enquanto o restaurante precisar dele.</strong>
-        Valor, taxa e horário permanecem, porque o restaurante usa esses números para fechar o caixa e acertar com o
-        entregador. Depois da exclusão dos dados pessoais, esse registro não contém mais nome, telefone nem localizador.
-        Quem define por quanto tempo guardá-lo é o restaurante, que pode ter obrigações contábeis e fiscais próprias.
-      </p>
+<h3>Do entregador</h3>
 
-      <p>
-        <strong>Conta do entregador: enquanto ele trabalhar no restaurante.</strong>
-        Contas são desativadas, não apagadas, para que o histórico de turnos anteriores continue disponível para
-        conferência de pagamentos.
-      </p>
+<ul><li><strong>Nome, e-mail e senha</strong>, para entrar no aplicativo. A senha é guardada como um resumo protegido, que não permite recuperá-la: ninguém consegue lê-la, nem nós nem o restaurante. O e-mail recebe os códigos de confirmação e de troca de senha.</li><li><strong>Telefone</strong>, para a loja falar com ele.</li><li><strong>Um número de identificação de 6 dígitos</strong>, que a loja usa para encontrá-lo e cadastrá-lo.</li><li><strong>Entregas feitas</strong>, com horário de saída e de entrega; <strong>taxas, diárias e turnos</strong>; <strong>ajustes no pagamento</strong>, com o motivo escrito pela loja (ou, na taxa de entrega com problema, gerado pelo sistema); e os <strong>avisos de problema na entrega</strong> que ele fez (motivo e horários), com a decisão da loja sobre a taxa. Servem para o entregador e o restaurante conferirem o acerto.</li><li><strong>A ordem das paradas que o entregador escolhe</strong> no aplicativo. A loja vê essa ordem no painel, para saber qual é a próxima entrega de cada rota.</li><li><strong>Localização do aparelho:</strong> veja "Localização do entregador", abaixo.</li></ul>
 
-      <h2>Com quem os dados são compartilhados</h2>
+<h3>Da equipe da loja (proprietário e balconista)</h3>
 
-      <p>Os dados podem ser acessados ou transitar por:</p>
+<ul><li><strong>Nome, e-mail e senha</strong>, para entrar no painel. A senha é guardada da mesma forma.</li><li><strong>Quem lançou um ajuste</strong> no pagamento de um entregador, <strong>quem decidiu pagar ou não a taxa</strong> de uma entrega com problema e <strong>quem descartou um pedido</strong> em espera, para a loja conferir depois.</li><li><strong>Quem aceitou o termo de uso de dados</strong> em nome do restaurante, quando e qual versão.</li><li><strong>Contato da loja para os entregadores</strong>, que o proprietário informa no cadastro da loja e pode trocar: um texto livre de até 200 caracteres (por exemplo, o nome de quem atende e um telefone), que o aplicativo mostra aos entregadores da mesma loja. O proprietário decide o que escrever, e pode ser um número pessoal dele ou da balconista.</li></ul>
 
-      <ul>
-        <li><strong>O restaurante contratante</strong>, que é o controlador</li>
-        <li><strong>O entregador designado</strong>, que vê apenas as entregas atribuídas a ele</li>
-        <li>
-          <strong>A plataforma de delivery</strong>, quando o pedido tem origem nela — nesse caso a plataforma é a
-          origem do dado, não o destino
-        </li>
-        <li>
-          <strong>O provedor de infraestrutura</strong> que hospeda o servidor, contratado sob obrigação de
-          confidencialidade
-        </li>
-        <li><strong>Autoridades públicas</strong>, se houver requisição legal</li>
-      </ul>
+<h3>De todas as contas</h3>
 
-      <p>
-        Não vendemos dados, não os cedemos para publicidade e não os usamos para qualquer finalidade além de fazer a
-        entrega acontecer.
-      </p>
+<ul><li><strong>O papel na loja</strong> (proprietário, balconista ou entregador) e <strong>a data em que o e-mail foi confirmado</strong>.</li></ul>
 
-      <h2>O que o sistema não faz</h2>
+<h3>De quem usa o painel ou o aplicativo</h3>
 
-      <ul>
-        <li>
-          <strong>Não rastreia a localização do entregador.</strong> O aplicativo não coleta nem envia a posição do
-          aparelho para nenhum servidor.
-        </li>
-        <li>
-          <strong
-            >Não usa cookies, ferramentas de análise de comportamento, publicidade ou relatório automático de
-            falhas.</strong
-          >
-          Nenhum dado é enviado a terceiros com essas finalidades.
-        </li>
-        <li>
-          <strong>Não guarda dados além do necessário para a entrega.</strong> Não há base de clientes, histórico de
-          compras nem perfil de consumo.
-        </li>
-        <li><strong>Não toma decisões automatizadas</strong> que afetem os interesses do cliente ou do entregador.</li>
-      </ul>
+<ul><li><strong>Endereço IP</strong>, de três formas diferentes:<ul><li>para limitar tentativas de acesso e o excesso de requisições, o servidor usa o IP <strong>só na memória</strong>, por no máximo uma hora, <strong>sem gravar</strong>;</li><li>quando o servidor está fora do ar (por exemplo, durante uma atualização), o servidor web registra o <strong>IP, a página pedida e o navegador</strong> de quem tentou acessar;</li><li>alguns serviços externos recebem o IP do seu aparelho quando você os usa. Estão listados em "Com quem os dados são compartilhados".</li></ul></li><li><strong>Sessão de acesso:</strong> o servidor guarda só um resumo protegido da chave da sessão, que não permite recuperá-la, com as datas de criação e de último uso. Não guarda IP nem modelo do aparelho.</li><li><strong>Códigos enviados por e-mail</strong>, para confirmar o e-mail e para trocar a senha esquecida. O código tem 6 dígitos e vale uma vez só. O servidor guarda só um resumo protegido dele, não o código.</li><li><strong>Relato de erros:</strong> quando o aplicativo ou o painel dá erro, ele avisa o nosso próprio servidor, com a mensagem do erro (sem e-mail, telefone, CEP ou localização), a tela, a versão e a identificação da conta.</li><li><strong>Sugestão ou reclamação:</strong> quem usa pode escrever para nós pelo botão "Sugestão ou reclamação", no aplicativo e no painel. Vai o texto que a pessoa escrever, se é um erro ou uma sugestão e, para entendermos o contexto, a versão, a tela, a hora, se havia sinal, os últimos passos no aplicativo (só o nome das telas e dos botões) e as últimas respostas de erro do servidor, com a identificação da conta. Não vai foto nem localização. Recebemos por e-mail o texto e esse resumo, com o nome da loja e o nome e a função de quem escreveu (por exemplo, "entregador"), para podermos tirar dúvidas com a pessoa.</li></ul>
 
-      <h2>Onde os dados ficam</h2>
+<h3>De quem visita este site ou escreve ao encarregado</h3>
 
-      <p>
-        Os dados são armazenados em servidor localizado no Brasil, com acesso restrito, e a comunicação entre o
-        aplicativo, o painel e o servidor é criptografada.
-      </p>
+<ul><li><strong>Endereço IP</strong>, recebido pela Cloudflare, que hospeda o site. O site não tem formulário, cookies nem ferramenta de análise de visitas.</li><li><strong>E-mail e mensagem</strong> de quem escreve ao encarregado, para responder ao pedido.</li></ul>
 
-      <p>
-        <strong>Não há transferência internacional de dados pessoais.</strong> Se isso mudar, esta política será
-        atualizada antes.
-      </p>
+<h2>Localização do entregador</h2>
 
-      <h2>Seus direitos</h2>
+<p>O aplicativo usa a localização do celular para mostrar o <strong>ponto azul</strong> no mapa, com a permissão "enquanto o app está em uso".</p>
 
-      <p>
-        O artigo 18 da Lei Geral de Proteção de Dados (Lei 13.709/2018) garante a você o direito de solicitar, a
-        qualquer momento:
-      </p>
+<p>Com o ponto azul ligado, o aplicativo envia a posição atual ao <strong>nosso servidor</strong>, só para desenhar o caminho da rota a partir de onde o entregador está. O servidor:</p>
 
-      <ul>
-        <li>Confirmação de que tratamos seus dados</li>
-        <li>Acesso aos dados</li>
-        <li>Correção de dados incompletos, inexatos ou desatualizados</li>
-        <li>
-          Anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a
-          lei
-        </li>
-        <li>Portabilidade a outro fornecedor, conforme regulamentação da ANPD</li>
-        <li>Eliminação dos dados tratados com base em consentimento</li>
-        <li>Informação sobre com quem compartilhamos seus dados</li>
-        <li>Informação sobre a possibilidade de não fornecer consentimento e sobre as consequências disso</li>
-        <li>Revogação do consentimento</li>
-        <li>Oposição a tratamento feito com base em legítimo interesse</li>
-      </ul>
+<ul><li>usa a posição na hora;</li><li><strong>não a grava</strong>, não a guarda em registro e não a envia a mais ninguém;</li><li>descarta a posição se ela estiver a mais de 60 km da loja.</li></ul>
 
-      <p>
-        Para exercer qualquer um deles, escreva ao encarregado:
-        <a href="mailto:despachapramim01@gmail.com">despachapramim01@gmail.com</a>. Respondemos em até 15 dias.
-      </p>
+<p><strong>O restaurante não vê a posição do entregador</strong>, e não existe histórico de onde ele esteve.</p>
 
-      <p>
-        Como somos operador, pedidos sobre uma entrega específica podem exigir a participação do restaurante, que é o
-        controlador — nesse caso encaminhamos a solicitação e informamos você.
-      </p>
+<p>Ao tocar em <strong>"Navegar"</strong>, o aplicativo abre o aplicativo de navegação que o próprio entregador escolheu (Google Maps ou Waze; no iPhone, também o Apple Maps), levando <strong>só o ponto da parada no mapa</strong>, nunca o endereço escrito. A partir daí, esse aplicativo segue a política de privacidade dele.</p>
 
-      <p>
-        Se não ficar satisfeito com a resposta, você pode apresentar reclamação à Autoridade Nacional de Proteção de
-        Dados (ANPD) em
-        <a href="https://www.gov.br/anpd">gov.br/anpd</a>.
-      </p>
+<h2>Taxa de entrega</h2>
 
-      <h2>Mudanças nesta política</h2>
+<p>O restaurante cadastra uma <strong>tabela de faixas de distância</strong>, cada uma com um valor. Quando a loja monta uma rota, o sistema mede a distância de cada entrega pela rua e <strong>calcula a taxa pela tabela do restaurante</strong>. No pedido lançado à mão, a balconista vê a taxa antes de criar o pedido.</p>
 
-      <p>
-        Se o sistema passar a tratar dados de forma diferente, esta página é atualizada antes da mudança entrar em
-        vigor, e a data de vigência no topo muda junto.
-      </p>
+<p>A loja pode <strong>mudar a taxa de qualquer entrega</strong>, ou marcá-la como isenta, até o fechamento do turno.</p>
+
+<p><strong>Se você é entregador</strong>, pode pedir à loja a tabela de faixas e a distância usada em cada entrega, e pedir que uma pessoa da loja reveja uma taxa com que não concorde. Também pode escrever ao nosso encarregado, que leva o pedido ao restaurante.</p>
+
+<h2>Com que fundamento</h2>
+
+<p>A lei só permite tratar dados pessoais quando há uma razão prevista nela (a "base legal"). As que se aplicam aqui são:</p>
+
+<ul><li><strong>execução de contrato</strong> (art. 7º, V, da LGPD): quando o dado é necessário para cumprir um acordo de que a própria pessoa faz parte, como a entrega que o cliente pediu ou o trabalho do entregador para o restaurante;</li><li><strong>legítimo interesse</strong> (art. 7º, IX): quando o uso é necessário para um objetivo legítimo de quem trata o dado, só no que a pessoa pode razoavelmente esperar e sem passar por cima dos direitos dela.</li></ul>
+
+<p><strong>Dados dos pedidos, dos clientes e dos entregadores:</strong> quem escolhe a base legal é o restaurante, que é o controlador. O sistema foi feito para atender:</p>
+
+<ul><li>a entrega do pedido que o cliente fez (execução de contrato);</li><li>a relação de trabalho ou de prestação de serviço entre o restaurante e o entregador (execução de contrato);</li><li>a organização da operação do restaurante, como o fechamento do caixa e o acerto com os entregadores (legítimo interesse).</li></ul>
+
+<p><strong>Contas da equipe da loja:</strong> permitir que as pessoas indicadas pelo restaurante usem o sistema que ele contratou (legítimo interesse).</p>
+
+<p><strong>Registros técnicos, relato de erros, controle de tentativas e cópias de segurança:</strong> manter o sistema seguro e funcionando (legítimo interesse).</p>
+
+<p>Nenhum dado é tratado para publicidade, porque não há publicidade no sistema.</p>
+
+<h2>Por quanto tempo os dados ficam</h2>
+
+<ul><li><strong>Nome, telefone, localizador, endereço, complemento, referência, CEP e coordenada do cliente:</strong> a limpeza automática roda de hora em hora e apaga esses dados na primeira passagem depois de o pedido completar 24 horas, ou seja, <strong>em até 25 horas</strong>. Um pedido do iFood pode ficar numa espera antes de entrar no despacho; nesse caso, as 24 horas contam da saída da espera. O pedido que chega com a loja sem turno aberto espera no máximo 7 horas, então o dado pode ficar <strong>até 32 horas</strong> desde a chegada. O pedido agendado espera até a hora marcada para o preparo, que pode ser em outro dia. A limpeza não depende de pedido de ninguém, mas você pode pedir a eliminação antes do prazo.</li><li><strong>Registro das entregas:</strong> o bairro, o valor, a forma de pagamento, o troco, a taxa, os horários, o entregador, a ordem das paradas, os ajustes no pagamento, os problemas na entrega (motivo, horários e decisão da taxa) e quem lançou ou descartou cada coisa. Ficam <strong>enquanto o restaurante usar o sistema</strong>, porque o restaurante usa esses dados para fechar o caixa e acertar com o entregador. Depois da limpeza acima, o registro não tem mais nome, telefone nem endereço do cliente.</li><li><strong>Contas da equipe e dos entregadores:</strong> <strong>enquanto o restaurante usar o sistema.</strong> Quando uma pessoa deixa de trabalhar no restaurante, a conta é desativada, não apagada, para que o histórico de turnos e pagamentos continue disponível para conferência.</li><li><strong>Quando o restaurante deixar de usar o sistema:</strong> entregamos a ele uma cópia dos dados e <strong>apagamos tudo em até 90 dias</strong>.</li><li><strong>Contato da loja para os entregadores:</strong> enquanto o restaurante usar o sistema; o proprietário pode trocá-lo, mas não apagá-lo.</li><li><strong>Foto de comprovação:</strong> <strong>20 dias</strong> depois da entrega, e então é apagada automaticamente. Se a loja baixar uma cópia da foto para o computador dela, <strong>essa cópia fica sob responsabilidade do restaurante</strong>: não conseguimos acompanhá-la nem apagá-la.</li><li><strong>Descrição do problema na entrega:</strong> apagada junto com os dados do cliente, <strong>em até 25 horas</strong>.</li><li><strong>Foto do problema na entrega:</strong> <strong>20 dias</strong> depois do aviso, e então é apagada automaticamente. A cópia que a loja baixar fica sob responsabilidade do restaurante, como a da foto de comprovação.</li><li><strong>Conteúdo da reclamação aberta no iFood:</strong> apagado <strong>20 dias</strong> depois de a reclamação ser encerrada.</li><li><strong>Endereços já localizados no mapa:</strong> <strong>25 dias.</strong> Para não consultar o mesmo endereço duas vezes, o servidor guarda rua, número, CEP e coordenada de endereços digitados pela loja, sem nome, telefone nem ligação com o pedido.</li><li><strong>Sessão de acesso:</strong> até <strong>90 dias</strong> sem uso. Depois disso, ou um dia depois de encerrada (ao sair, ao trocar a senha ou quando a conta é desativada), é apagada.</li><li><strong>Código enviado por e-mail:</strong> o resumo protegido é apagado <strong>24 horas</strong> depois de usado ou vencido. O serviço de envio guarda o e-mail enviado, com o código já vencido, por <strong>30 dias</strong>.</li><li><strong>Sugestão ou reclamação:</strong> <strong>30 dias</strong> no sistema, e então é apagada automaticamente. A cópia no nosso e-mail é apagada em até <strong>90 dias</strong>.</li><li><strong>Registros técnicos do servidor:</strong> guardam identificadores (do pedido, da loja, da conta), códigos de resposta, horários e, quando o mapa não encontra um endereço digitado pela loja, só o bairro; e, quando o servidor está fora do ar, o IP, a página pedida e o navegador de quem tentou acessar. <strong>Não guardam nome, telefone, endereço, CEP, e-mail, documento nem o texto de reclamação do cliente.</strong> Os mais antigos são apagados à medida que o espaço reservado (50 MB por serviço) se enche; por isso o prazo não é fixo em dias.</li><li><strong>E-mails recebidos pelo encarregado:</strong> apagados <strong>1 ano</strong> depois de respondidos.</li><li><strong>Cópias de segurança.</strong> Apagar um dado do sistema não o apaga, no mesmo instante, das cópias de segurança feitas antes. Elas expiram sozinhas:<ul><li><strong>cópia diária do banco:</strong> feita todo dia, <strong>cifrada antes de sair do servidor</strong>, e cada cópia fica 7 dias guardada. Por isso o dado do cliente pode continuar, cifrado, nessas cópias por <strong>até cerca de 9 dias</strong> depois do pedido. A chave que abre as cópias não fica no servidor nem com o serviço que as guarda;</li><li><strong>cópia semanal do servidor inteiro:</strong> a empresa que hospeda o servidor faz, toda semana, uma cópia da máquina inteira (banco de dados, fotos e registros técnicos) e guarda as duas mais recentes. Por isso dados já apagados do sistema, inclusive fotos, podem continuar nessa cópia por <strong>até 14 dias</strong>.</li></ul></li><li><strong>No aparelho de quem usa:</strong> veja "O que fica no seu aparelho", abaixo.</li></ul>
+
+<h2>Onde os dados ficam</h2>
+
+<p>O banco de dados e as fotos ficam num servidor no <strong>Brasil</strong>, num data center da Hostinger no estado de São Paulo, com acesso restrito. A comunicação entre o aplicativo, o painel e o servidor é protegida por HTTPS.</p>
+
+<p>A cópia de segurança diária fica fora do Brasil, no serviço de armazenamento da Cloudflare, na <strong>União Europeia</strong>, sempre cifrada.</p>
+
+<h2>Com quem os dados são compartilhados</h2>
+
+<ul><li><strong>O restaurante</strong> responsável pelo pedido ou pelo entregador.</li><li><strong>O entregador designado</strong>, que vê apenas as entregas da rota dele: nome, telefone (no pedido do iFood, o da central com o localizador), endereço com complemento e referência, valor a cobrar, forma de pagamento e troco; e o contato da loja.</li><li><strong>O iFood</strong>, quando o pedido vem dele. De nós, ele recebe só o andamento do pedido (confirmado, pronto, saiu para entrega), o pedido de cancelamento com o motivo, o código de entrega digitado pelo entregador e as pausas da loja com o motivo. Nenhum dado do entregador.</li><li><strong>Hostinger</strong>, empresa com sede em Chipre, na União Europeia, que hospeda o servidor no estado de São Paulo e faz a cópia semanal. Pelo acordo dela, só trata os dados para prestar o serviço, pode usar empresas subcontratadas (inclusive para suporte) e pode tratar dados fora do Brasil.</li><li><strong>Cloudflare</strong>, que guarda as cópias diárias cifradas, sem a chave para abri-las, hospeda este site e responde pelo nome do domínio. O tráfego do painel, do aplicativo e do servidor <strong>não passa</strong> pela Cloudflare.</li><li><strong>Google (Geocoding e Distance Matrix)</strong>, só no pedido lançado à mão pela loja: rua, número e CEP, para achar o ponto no mapa; e o ponto da loja e do cliente, para medir a distância, só quando o nosso serviço de rotas está fora do ar. Pedido do iFood nunca vai ao Google.</li><li><strong>Resend</strong>, que envia os e-mails do sistema: recebe o e-mail da conta e o texto com o código de confirmação ou de troca de senha, e as sugestões ou reclamações (o texto, o nome da loja, o nome e a função de quem escreveu e os dados técnicos), e os guarda por 30 dias. Fora o que alguém escrever nesse texto, nenhum dado de pedido ou de cliente.</li><li><strong>Expo e Google (Firebase)</strong>, que entregam as notificações no Android: recebem o código de notificação do aparelho, o título e o texto do aviso (por exemplo, "Nova rota: 3 entregas"). Nunca nome, endereço ou telefone. O Expo também distribui as atualizações do aplicativo Android e, quando o aplicativo procura versão nova, recebe o IP, um identificador aleatório da instalação (que não é o do aparelho) e a versão instalada.</li><li><strong>Apple</strong> (ou Google, Mozilla e Microsoft, conforme o navegador), que entregam as notificações no navegador do iPhone: recebem o endereço da assinatura e o horário. <strong>O texto do aviso vai cifrado</strong>, com a chave guardada no próprio navegador, e eles não conseguem lê-lo.</li><li><strong>OpenStreetMap Foundation</strong>, que fornece o mapa do painel da loja: recebe o IP do computador da loja e a região do mapa exibida.</li><li><strong>Google (Gmail)</strong>, onde chega o e-mail de quem escreve ao encarregado.</li><li><strong>Autoridades públicas</strong>, se houver ordem legal.</li></ul>
+
+<p>O mapa do aplicativo do entregador vem do <strong>nosso próprio servidor</strong>, com dados do OpenStreetMap; nenhum serviço de mapa de terceiros o recebe.</p>
+
+<p>Dois serviços de monitoramento (healthchecks.io e UptimeRobot) verificam se o servidor e a cópia de segurança estão funcionando. Eles recebem só sinais de funcionamento, sem dado pessoal.</p>
+
+<p><strong>Não vendemos dados e não os cedemos para publicidade.</strong> Usamos os dados só para as finalidades descritas nesta política: organizar as entregas, dar acesso ao sistema, mantê-lo seguro e atender aos pedidos que recebemos.</p>
+
+<h2>Transferência internacional de dados</h2>
+
+<p>Alguns dos serviços acima são de empresas com sede fora do Brasil e podem tratar dados pessoais fora do país. Por finalidade:</p>
+
+<div class="tabela"><table>
+<thead><tr><th scope="col">Para quê</th><th scope="col">Quem</th><th scope="col">Onde fica a empresa</th></tr></thead>
+<tbody>
+<tr><td>Hospedar o servidor e fazer a cópia semanal</td><td>Hostinger</td><td>União Europeia (Chipre)</td></tr>
+<tr><td>Guardar a cópia de segurança diária, cifrada</td><td>Cloudflare</td><td>União Europeia (local do armazenamento)</td></tr>
+<tr><td>Hospedar este site</td><td>Cloudflare</td><td>Estados Unidos</td></tr>
+<tr><td>Achar o ponto no mapa de um pedido lançado à mão</td><td>Google</td><td>Estados Unidos</td></tr>
+<tr><td>Entregar avisos e atualizações no Android</td><td>Expo e Google</td><td>Estados Unidos</td></tr>
+<tr><td>Entregar avisos no navegador do iPhone (texto cifrado)</td><td>Apple, ou Mozilla e Microsoft conforme o navegador</td><td>Estados Unidos</td></tr>
+<tr><td>Enviar os códigos de acesso e as sugestões ou reclamações por e-mail</td><td>Resend</td><td>Estados Unidos</td></tr>
+<tr><td>Receber os e-mails enviados ao encarregado e as sugestões ou reclamações</td><td>Google</td><td>Estados Unidos</td></tr>
+<tr><td>Mostrar o mapa do painel da loja</td><td>OpenStreetMap Foundation</td><td>Reino Unido</td></tr>
+</tbody></table></div>
+
+<p>A Autoridade Nacional de Proteção de Dados reconhece a União Europeia como tendo proteção de dados adequada. Os demais serviços são usados porque o sistema não funciona sem eles, e recebem só os dados descritos nesta política.</p>
+
+<h2>O que fica no seu aparelho</h2>
+
+<p>O sistema <strong>não usa cookies</strong>.</p>
+
+<p><strong>No aplicativo do entregador:</strong></p>
+
+<ul><li><strong>Sessão</strong> (as chaves de acesso): até você tocar em "Sair". Ficam no armazenamento seguro do aparelho (cifrado, no Android). Se a loja desativar a sua conta, o acesso deixa de funcionar. A sua senha nunca é guardada.</li><li><strong>Último e-mail usado</strong>, para você não digitar de novo. Fica até você apagar os dados do aplicativo; o "Sair" não o apaga.</li><li><strong>Preferências</strong> (tema, aplicativo de navegação, avisos que você fechou): até você apagar os dados do aplicativo.</li><li><strong>A rota que você recebeu</strong> (endereço, complemento, nome do cliente, forma de pagamento, telefone ou localizador e, se houver, o problema avisado na entrega, com o motivo e a hora, dos pedidos que faltam), para você consultar sem sinal. É apagada quando a rota termina, quando o pedido sai da rota ou é cancelado, quando você marca a entrega, ao tocar em "Sair" e, no máximo, <strong>24 horas</strong> depois de recebida.</li><li><strong>Contato da loja para os entregadores</strong>, para você falar com a loja mesmo sem sinal: até tocar em "Sair", entrar com outra conta ou a loja trocá-lo.</li><li><strong>Entregas marcadas sem sinal (o número do pedido e o endereço: rua, número e bairro) e a foto ainda não enviada:</strong> apagadas assim que chegam à loja, ao tocar em "Sair" e, no máximo, 24 horas depois.</li><li><strong>Erro que fechou o aplicativo</strong> (a mensagem do erro e a tela), para avisar o nosso servidor na próxima abertura: apagado assim que é enviado e, no máximo, 24 horas depois.</li><li><strong>A sua posição não é guardada no aparelho.</strong></li></ul>
+
+<p><strong>No navegador do iPhone:</strong> o mesmo, no armazenamento do site, sem cifra. O iPhone apaga o armazenamento de um site que você não abre há 7 dias.</p>
+
+<p><strong>No painel da loja:</strong></p>
+
+<ul><li><strong>No aplicativo para Windows:</strong> as chaves de acesso, até sair da conta.</li><li><strong>No navegador:</strong> as chaves de acesso ficam no armazenamento da sessão e se apagam ao fechar a aba.</li></ul>
+
+<h2>O que o sistema não faz</h2>
+
+<ul><li><strong>Não guarda histórico de localização</strong> e não deixa a loja ver a posição do entregador. A posição atual só é usada, com o ponto azul ligado, para desenhar o caminho da rota.</li><li><strong>Não usa cookies, análise de comportamento, publicidade nem serviço externo de relato de falhas.</strong></li><li><strong>Não forma cadastro de clientes</strong>, histórico de compras nem perfil de consumo.</li></ul>
+
+<h2>Seus direitos</h2>
+
+<p>A Lei Geral de Proteção de Dados (Lei 13.709/2018, art. 18) garante a você o direito de pedir, a qualquer momento e sem custo:</p>
+
+<ul><li>confirmação de que tratamos seus dados;</li><li>acesso aos dados;</li><li>correção de dados incompletos, errados ou desatualizados;</li><li>anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados fora da lei;</li><li>portabilidade a outro fornecedor, conforme as regras da ANPD;</li><li>informação sobre com quem compartilhamos seus dados;</li><li>informação sobre os critérios de um cálculo automático que afete seus interesses, como a taxa de entrega, e a revisão dele por uma pessoa (veja "Taxa de entrega").</li></ul>
+
+<p>Você também pode <strong>se opor a um tratamento</strong> feito sem o seu consentimento quando ele não cumprir a lei.</p>
+
+<p>Como nenhum dado é tratado com base em consentimento, os direitos ligados ao consentimento (revogá-lo e eliminar os dados tratados com base nele) não se aplicam hoje.</p>
+
+<p><strong>Como pedir:</strong> escreva ao e-mail <strong><a href="mailto:despachapramim01@gmail.com">despachapramim01@gmail.com</a></strong>, que é o canal de dados do Despacha Pra Mim e de todos os restaurantes que usam o sistema. Se você pedir só a confirmação de que tratamos seus dados, respondemos assim que recebermos o pedido. Os demais pedidos, inclusive a cópia completa dos seus dados, respondemos em até <strong>15 dias</strong>. Quando o pedido for sobre dados de um pedido ou de um entregador, que são do restaurante responsável, encaminhamos a ele e informamos você. Se não for possível atender, explicamos o motivo. O atendimento é gratuito.</p>
+
+<p>Se não ficar satisfeito com a resposta, você pode reclamar à <strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong>, em <a href="https://www.gov.br/anpd">gov.br/anpd</a>, e, se for consumidor, também aos <strong>órgãos de defesa do consumidor</strong> (como o Procon).</p>
+
+<h2>Mudanças nesta política</h2>
+
+<p>Se o sistema passar a tratar dados de outra forma, esta página é atualizada <strong>antes</strong> da mudança entrar em vigor, e a data no topo muda junto.</p>
+
+<p><strong>O que mudou em relação à versão de 6 de setembro de 2026:</strong></p>
+
+<ul><li>a localização do entregador para o ponto azul e o traçado da rota;</li><li>a foto de comprovação;</li><li>as notificações;</li><li>os códigos por e-mail;</li><li>o relato de erros ao nosso servidor;</li><li>o armazenamento no aparelho para uso sem sinal;</li><li>as cópias de segurança;</li><li>a taxa de entrega;</li><li>a transferência internacional e a lista completa de fornecedores;</li><li>os papéis de controlador e operador separados por tipo de dado, e o canal único para pedidos;</li><li>os prazos de guarda;</li><li>o contato da loja que o proprietário pode mostrar aos entregadores.</li></ul>
 
       <footer><a href="index.html">Despacha Pra Mim</a> — Taubaté, SP</footer>
     </main>
