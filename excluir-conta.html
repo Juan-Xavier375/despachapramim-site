@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Excluir conta — Despacha Pra Mim</title>
+    <link rel="icon" href="icone.svg" type="image/svg+xml" />
+    <style>
+      /* Tema escuro fixo, com os papéis de cor do painel (apps/desktop/src/App.css) */
+      :root {
+        color-scheme: dark;
+        --fundo: #030712; /* canvas */
+        --superficie: #101828; /* surface */
+        --texto: #f9fafb; /* fg */
+        --secundaria: #99a1af; /* fg-3 */
+        --regra: #364153; /* line */
+        --laranja: #f6700f; /* primary */
+        --laranja-texto: #ff8a3d; /* primary-text */
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--fundo);
+        color: var(--texto);
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 18px;
+        line-height: 1.7;
+      }
+      .folha {
+        max-width: 38rem;
+        margin: 0 auto;
+        padding: 3.5rem 1.5rem 5rem;
+        overflow-wrap: break-word;
+      }
+      header {
+        border-bottom: 3px solid var(--laranja);
+        padding-bottom: 1.5rem;
+        margin-bottom: 2.5rem;
+      }
+      h1 {
+        font-size: 1.85rem;
+        line-height: 1.25;
+        margin: 0 0 0.5rem;
+        font-weight: normal;
+      }
+      .vigencia {
+        color: var(--secundaria);
+        font-size: 0.9rem;
+        margin: 0;
+        font-family: system-ui, sans-serif;
+      }
+      h2 {
+        font-size: 1.15rem;
+        margin: 2.75rem 0 0.75rem;
+        font-weight: bold;
+        line-height: 1.35;
+      }
+      h3 {
+        font-size: 1rem;
+        margin: 1.75rem 0 0.5rem;
+        font-weight: bold;
+        line-height: 1.35;
+        color: var(--secundaria);
+        font-family: system-ui, sans-serif;
+      }
+      p,
+      li {
+        margin: 0 0 1rem;
+      }
+      ul {
+        padding-left: 1.25rem;
+      }
+      li > ul {
+        margin-top: 0.75rem;
+      }
+      a {
+        color: var(--laranja-texto);
+        text-decoration-color: var(--laranja-texto);
+        text-underline-offset: 3px;
+      }
+      a:hover {
+        color: var(--texto);
+      }
+      a:focus-visible {
+        outline: 2px solid var(--laranja-texto);
+        outline-offset: 3px;
+      }
+      .tabela {
+        margin: 1.5rem 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: system-ui, sans-serif;
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 0.6rem 0.75rem 0.6rem 0;
+        border-bottom: 1px solid var(--regra);
+      }
+      th {
+        color: var(--secundaria);
+        font-weight: 600;
+        background: var(--superficie);
+        border-bottom: 2px solid var(--laranja);
+      }
+      th:first-child,
+      td:first-child {
+        padding-left: 0.75rem;
+      }
+      footer {
+        margin-top: 3.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--regra);
+        color: var(--secundaria);
+        font-size: 0.9rem;
+        font-family: system-ui, sans-serif;
+      }
+      @media (max-width: 480px) {
+        body {
+          font-size: 17px;
+        }
+        .folha {
+          padding: 2.5rem 1.25rem 4rem;
+        }
+        h1 {
+          font-size: 1.45rem;
+        }
+        table {
+          font-size: 0.85rem;
+        }
+        th,
+        td {
+          padding-right: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="folha">
+      <header>
+        <h1>Excluir conta no Despacha Pra Mim</h1>
+        <p class="vigencia">
+          Esta página é para o <strong>entregador</strong> que usa o aplicativo
+          <strong>Despacha Pra Mim - Motoboy</strong>.
+        </p>
+      </header>
+
+      <h2>Como pedir a exclusão pelo aplicativo</h2>
+
+      <ol>
+        <li>Abra o aplicativo e entre na sua conta.</li>
+        <li>Toque na aba <strong>Conta</strong>.</li>
+        <li>Toque em <strong>Excluir minha conta</strong> e confirme.</li>
+      </ol>
+
+      <p>
+        Assim que você confirma, você sai da conta em todos os aparelhos. A conta só é excluída depois de 7 dias, e
+        entrar nela antes disso cancela o pedido (veja abaixo).
+      </p>
+
+      <p>
+        O pedido só pode ser feito fora de turno. Se você estiver escalado num turno aberto, ou com entrega em
+        andamento, peça depois do fechamento.
+      </p>
+
+      <p>
+        Não vê "Excluir minha conta" no aplicativo? Você está com uma versão anterior. Abra
+        <a href="https://motoboy.despachapramim.com.br">motoboy.despachapramim.com.br</a> no navegador do celular, entre
+        na sua conta e use a aba Conta. Se não conseguir, escreva para
+        <a href="mailto:despachapramim01@gmail.com">despachapramim01@gmail.com</a> a partir do e-mail da conta.
+      </p>
+
+      <h2>Se a sua conta foi desativada pelo restaurante</h2>
+
+      <p>
+        Na tela de entrada do aplicativo, toque em <strong>Excluir minha conta</strong> e siga os passos. Você não
+        precisa de uma conta ativa para pedir a exclusão.
+      </p>
+
+      <p>
+        Não vê <strong>Excluir minha conta</strong> na tela de entrada? Você está com uma versão anterior. Abra
+        <a href="https://motoboy.despachapramim.com.br">motoboy.despachapramim.com.br</a> no navegador do celular e use
+        o mesmo botão na tela de entrada. Se não conseguir, escreva para
+        <a href="mailto:despachapramim01@gmail.com">despachapramim01@gmail.com</a> a partir do e-mail da conta.
+      </p>
+
+      <h2>Quando a conta é excluída</h2>
+
+      <ul>
+        <li><strong>A conta é excluída 7 dias depois do pedido, se ninguém entrar nela nesse prazo.</strong></li>
+        <li>
+          <strong>Entrar na conta antes disso cancela o pedido.</strong> Se mudou de ideia, basta entrar no aplicativo
+          dentro dos 7 dias. Se não foi você quem pediu, entrar também cancela.
+        </li>
+        <li><strong>Depois de excluída, a conta não pode ser recuperada.</strong></li>
+      </ul>
+
+      <h2>O que é apagado e o que fica</h2>
+
+      <ul>
+        <li>
+          <strong>E-mail, telefone e ID de seis dígitos são apagados.</strong> A senha, as sessões de acesso e os
+          códigos de notificação do aparelho também são apagados, e o seu nome passa a aparecer como "Motoboy excluído".
+        </li>
+        <li>
+          <strong>As entregas e os pagamentos já feitos ficam com o restaurante, sem identificação.</strong> O
+          restaurante continua vendo as taxas, as diárias e os ajustes, mas no lugar do seu nome aparece "Motoboy
+          excluído". Ele precisa desses dados para fechar o acerto.
+        </li>
+        <li>
+          <strong>A exclusão não alcança</strong> o que a loja escreveu em texto livre (como a descrição de um ajuste)
+          nem as cópias que já saíram por e-mail.
+        </li>
+        <li>
+          <strong>As cópias de segurança</strong> podem guardar os dados por até <strong>14 dias</strong> depois da
+          exclusão, até expirarem sozinhas. Veja a <a href="politica-de-privacidade.html">Política de Privacidade</a>.
+        </li>
+        <li><strong>O mesmo e-mail pode ser cadastrado de novo depois</strong>, como uma conta nova.</li>
+      </ul>
+
+      <h2>Se não conseguir pelo aplicativo</h2>
+
+      <p>
+        Como último recurso, escreva para
+        <strong><a href="mailto:despachapramim01@gmail.com">despachapramim01@gmail.com</a></strong
+        >, pedindo a exclusão da conta, <strong>usando o e-mail da própria conta</strong> (o mesmo com que você entra no
+        aplicativo). Respondemos em até <strong>15 dias</strong>, como diz a
+        <a href="politica-de-privacidade.html">Política de Privacidade</a>.
+      </p>
+
+      <h2>Contas de proprietário e de balconista</h2>
+
+      <p>Esta página não vale para essas contas. Se você é proprietário ou balconista, fale com o restaurante.</p>
+
+      <p>
+        Para saber mais sobre os dados que tratamos e seus direitos, leia a
+        <a href="politica-de-privacidade.html">Política de Privacidade</a>.
+      </p>
+
+      <footer><a href="index.html">Despacha Pra Mim</a> — Taubaté, SP</footer>
+    </main>
+  </body>
+</html>
